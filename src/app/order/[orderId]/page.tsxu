@@ -1,0 +1,82 @@
+"use client";
+
+import { useEffect, useState } from "react";
+import { useParams, useRouter } from "next/navigation";
+import OrderDetails from "@/components/OrderDetails";
+import { fetchUserDetails } from "@/utils/api";
+
+export default function OrderPage() {
+  const { orderId } = useParams();
+  const router = useRouter();
+  const [validOrder, setValidOrder] = useState(false);
+  const [invoiceDetails, setInvoiceDetails] = useState({
+    invoiceName: "",
+    invoiceAddress: "",
+  });
+
+  useEffect(() => {
+    if (orderId) {
+      setValidOrder(true);
+    } else {
+      console.error("❌ Invalid Order ID");
+    }
+  }, [orderId]);
+
+  useEffect(() => {
+    const loadUserDetails = async () => {
+      const storedEmail = typeof window !== "undefined" ? localStorage.getItem("email") : null;
+      if (!storedEmail) return;
+
+      try {
+        const data = await fetchUserDetails(storedEmail);
+        if (data.success && data.message) {
+          setInvoiceDetails({
+            invoiceName: data.message.company || data.message.name || "Not Set",
+            invoiceAddress: data.message.companyAddress || data.message.address || "Not Set",
+          });
+        }
+      } catch (error) {
+        console.error("❌ Error fetching user details:", error);
+      }
+    };
+
+    loadUserDetails();
+  }, []);
+
+  const handlePrintInvoice = () => {
+    router.push(`/invoice/${orderId}`);
+  };
+
+  if (!validOrder) return <p>Invalid Order ID.</p>;
+
+  return (
+    <div className="container mx-auto p-4">
+      <h1 className="text-2xl font-bold">Order Summary</h1>
+
+      {/* ✅ Order Details */}
+      <OrderDetails />
+
+      {/* ✅ Invoice Details Section */}
+      <div className="border p-4 mt-6 bg-gray-100 rounded shadow-md">
+        <h2 className="text-lg font-bold mb-2">Invoice Details</h2>
+        <p><strong>Invoice Name:</strong> {invoiceDetails.invoiceName}</p>
+        <p><strong>Invoice Address:</strong> {invoiceDetails.invoiceAddress}</p>
+
+        {/* ✅ Link to update invoicing details */}
+        <p className="mt-2 text-sm text-blue-500 underline cursor-pointer" onClick={() => router.push("/my-details")}>
+          If this is incorrect, update your company name and address here.
+        </p>
+      </div>
+
+      {/* ✅ Print Invoice Button */}
+      <div className="mt-4">
+        <button
+          onClick={handlePrintInvoice}
+          className="px-6 py-2 bg-blue-500 text-white rounded hover:bg-blue-600"
+        >
+          Print Invoice
+        </button>
+      </div>
+    </div>
+  );
+}
