@@ -1,14 +1,4 @@
 {
-  "type": "service_account",
-  "project_id": "idyllic-unity-450204-a4",
-  "private_key_id": "936ea415e4b0166e85275ae5b5b666b0c70ebebe",
-  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQC4hKBhNwV6HFsv\nP5nU7wThfLJANg1gQTLT02z9YB5uaB51v76wcaKQMERoDLLjgDuKIGG2ldjl7MS9\nUzRKAJU3P0LK8apjStWNmss1VaVCaq58xlFDk7cQklQI8moJ0nob6K/fGQNkA2/s\nClPsx7+sXTvaO8sRfrXWeXzSsuIYtXoXDFEijl22i3Tz8cZd/zo9iRW+AG+mm9xX\nJof1SVx2AZ3fVj8/3WMouFOhFbROFZxBNMj8gMizf5YTrJQkZa0Scqc4si6WXHEa\n6lK8lYpDecchSDZn4NzLOIpby8JD6W2sSVnogSAJEEsqqoFsa8na6wiANG6tdjPT\n05J7ja2vAgMBAAECggEACEgfoK1lCAmMyC6dG3MM74f2wi4K5KaYfuxu6GJvizoO\nH+/Wwbmf98PK1ja3ssFXKshwSk8oeI1reSnqX2XuTJgAyfYV1TYPJrdrZn3tGHGM\nWlpWXGedYFeJAQvMWZuCUo1bk3Jedhc3Z0tBYA/JGRXoMU/cufDLfZBfW1+fCUfM\nYp0nwcKk0zlkbj3LNKx+mEOYq53tJdA8im16Z+H/2WxijOOseFstP4cec3MMrIIN\nqyX6xAxhTdsc8n37qEDlhc5MUfFh0m8TLCtUuqkM5oF1F2tWvPk7W8PBJVIzysKE\na7RoZbjKTvtTfA35bhAKjYUphJaZd0p1vopLqG72dQKBgQDnDtrs6zJn1pil9t9L\nslmfBgQoygvCISyXxuQGzrIDMgGq32FhUAc51Nn5EFy8xUJ8OlP7tRg4XR5rScSH\nN7r9PQGAvLmuh3mmJqLfB3/7GAV58u3GQ36o4FNFTlCXlx8N2Aneg/urh7Gp7l6K\neZiweDPiho0HJil4GuQUJ16gCwKBgQDMb6sohU25OeAghkGRNtWq0PsTOk+7bNvO\ntcSsSVMYvUGdr6bE9N8d0mD9AG0Qz9Jetvin2nooJDa2oy8ZC21ktXlR+n7PAsEP\nKjG0Bgqs15zkiad9Yxd1UjwA25UXiBSNU6HGI/jPsIdGpbG0XfYpkWN3G/oqZjDs\ni+TQo8M7bQKBgCeWzwH7BobuKPd+xiG1LE/n+vx2Ke+YOYjD5jwYXD3Z6pk5bvj6\nelJ5WuOm3wzlC5A3ej5NeBnoMpcVa5vze5F6S3CgZXw28Cv8wLlQEqiWJBISApWO\n6PvMe9gLJBnlJcf8dSxwFsX8GP/RvNcjIHtUDSfKAA3yhvZyPRQK7tajAoGAJpZF\nRiazHu0PotP0eEZTWiSL33s4JXZMnt2sO6CzcI34Xp0S60YU/voAmICGFZBEcuAy\nWuxf9kevlBWFBEMl6MZgGdsgKE6qxgP+0a36QdmIoZJh7MbRXLGi5b6Mi56B0pMg\ni9eqVPlK70jDG/pIRlxM2+SJ+YrEXUGidMcUSJkCgYA1Jn6B6VMwan/ysyv4AfSR\nkw5Sg8d329wNqlMzBXyjmSbj/EOeQ6P7Zn/okFz1JQCpXrDLyJS94IRohUGJ4Fkr\nPo6ud322GEm3VAevFTSiilejVU48zhXk9hAW0aVFKHXHf+DQB7rbromqTGcXL24X\nN0ckMjlJGraj0jv4qYt3Yg==\n-----END PRIVATE KEY-----\n",
-  "client_email": "my-e-commerce-service-account@idyllic-unity-450204-a4.iam.gserviceaccount.com",
-  "client_id": "112097865901172247684",
-  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
-  "token_uri": "https://oauth2.googleapis.com/token",
-  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
-  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/my-e-commerce-service-account%40idyllic-unity-450204-a4.iam.gserviceaccount.com",
-  "universe_domain": "googleapis.com"
+
 }
 
